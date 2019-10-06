@@ -1,0 +1,154 @@
+@import '../variables/index.scss';
+
+.app-header{
+    text-align: center;
+  
+    
+    &__container{
+      padding: 20px 15px 20px 15px;
+      background-color: $headerColor;
+      height: 250vh;
+      &--signature {
+        font-family: $signatureFont;
+        font-Size: 34px;
+        line-Height: 32px;
+        line-Height: 100%;
+      }
+  
+      &--title {
+        font-family: $titleFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 30px;
+        line-height: 41px;
+        text-align: center;
+        letter-spacing: 0.850001px;
+  
+      }
+    
+      &--image1{
+        img{
+          padding: 20px 0px 20px 0px;
+          object-position: 100% 100%;
+          width: 100%;
+          height: 50vh;
+          object-fit: cover;
+  
+        }
+      } 
+      &--button{
+        font-family: $paragraphFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 0.396667px;
+  
+        button{
+          a{
+            text-decoration: none;
+            color: black;
+          }
+          margin-top: 20px;
+          background-color: $buttonColor;
+          outline: none;
+          border: none;
+          padding: 16px 25px;
+          cursor: pointer;
+          text-transform: uppercase;
+        }
+  
+      }
+      
+      &--image2{
+        img{
+          padding: 30px 0px 10px 0px;
+          object-position: 100% 100%;
+          width: 100%;
+          height: 70vh;
+          object-fit: cover;
+        }
+      }
+  
+      &--image3{
+        img{
+          padding: 10px 0px 20px 0px;
+          object-position: 0% 0%;
+          width: 100%;
+          height: 50vh;
+          object-fit: cover;
+        }
+      }
+      .pepper{
+        float: left;
+      }
+    }
+    
+  }
+  
+  .app-main{
+  
+    &__container{
+      padding: 55px 15px 20px 15px;
+  
+      &--title{
+        font-family: $quotationFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        line-height: 32px;
+        letter-spacing: 0.392px;
+      }
+      svg{
+        float: right;
+      }
+  
+      &--signature{
+        p{
+          text-align: right;
+          padding: 25px 0 25px 0;
+          font-family: $signatureFont;
+          font-Size: 25px;
+          line-Height: 32px;
+          line-Height: 100%;
+        }
+      }
+  
+      &--image4{
+        img{
+          padding: 10px 0px 30px 0px;
+          object-position: 100% 60%;
+          width: 100%;
+          height: 50vh;
+          object-fit: cover;
+        }
+      }
+  
+      &--paragraph{
+        font-family: $paragraphFont;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 0.228667px;
+      }
+  
+      &--image5{
+        img{
+          padding: 30px 0px 30px 0px;
+          object-position: 0% 110%;
+          width: 100%;
+          height: 50vh;
+          object-fit: cover;
+        }
+      }
+      .onion{
+        float: left;
+      }
+    }
+  }
+  
+  
+  
+  

@@ -1,0 +1,222 @@
+@import '../variables/index.scss';
+
+@media (min-width: 1025px)  {
+
+    .app-header{
+  
+      display: grid;
+      grid-template-columns: 80px 25% 25% auto;
+      grid-template-rows: auto;
+          
+      &__container{
+        padding: 0px 0px 0px 0px;
+        display: grid;
+        max-width: 100%;
+        grid-template-columns: 80px 10% 10% 10% 80px 10% 10% 10% 10% 10% 10% auto;
+        grid-template-rows: 10vh 10vh 10vh 20vh 20vh 20vh 50vh;
+        text-align: center;
+        background-color: $headerColor;
+        height: 120vh;
+        grid-column: 2 / span 3;
+        grid-row: 1 / 2;
+        justify-items: center;
+    
+        &--signature {
+          padding: 35px 0px 0px 0px;
+          grid-column: 5 / span 3;
+          align-self: end;
+          grid-row: 1 / 3;
+          font-family: $signatureFont;
+          font-Size: 55px;
+          line-Height: 32px;
+          line-Height: 100%;
+        }
+    
+        &--title {
+          font-family: $titleFont;
+          font-style: normal;
+          font-weight: normal;
+          justify-items: center;
+          font-size: 75px;
+          line-height: 41px;
+          text-align: center;
+          letter-spacing: 0.850001px;
+          align-self: end;
+          grid-column: 4 / span 5;        
+          grid-row: 5 / 5;
+          vertical-align: middle; 
+          p{
+            line-height: 1.2;
+          }
+          svg{
+            float: right;
+            padding-right: 50px;
+          }
+        }
+      
+        &--image1{
+          align-self: start;
+          grid-column: 9 / end;
+          grid-row: 1 / 2;
+          img{
+            padding: 0px 0px 0px 0px;
+            object-position: 100% 100%;
+            width: 23vw;
+            height: 50vh;
+            object-fit: cover;
+    
+          }
+        }
+    
+        &--button{
+          grid-column: 4 / span 5;        
+          grid-row: 6/ 6;
+          font-family: $paragraphFont;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 17px;
+          text-align: center;
+          letter-spacing: 0.396667px;
+    
+          button{
+            margin-top: 20px;
+            background-color: $buttonColor;
+            outline: none;
+            border: none;
+            padding: 20px 35px;
+            cursor: pointer;
+            text-transform: uppercase;
+          }
+    
+        }
+        
+        &--image2{
+          grid-column: 1 / span 1;
+          grid-row: 2 / 3;
+          img{
+            object-position: 100% 100%;
+            width: 30vw;
+            height: 90vh;
+            object-fit: cover;
+          }
+        }
+    
+        &--image3{
+          grid-column: 8 / span 3;
+          grid-row: 7 / 9;
+          img{
+            padding: 10px 0px 20px 0px;
+            object-position: 0% 0%;
+            width:  25vw;
+            height: 50vh;
+            object-fit: cover;
+          }
+        }
+        &--svg{
+          grid-column: 1 / span 1;
+          grid-row: 10/ 10;
+          .pepper{
+            float: left;
+          }
+        }
+      }
+      
+    }
+    
+    .app-main{
+      &__container{
+        padding: 0px 0px 0px 0px;
+        display: grid;
+        grid-template-columns: 80px 10% 10% 10% 80px 20% 15% 10% 10% 10% 10%;
+        grid-template-rows: 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 15vh 70vh;
+  
+  
+        &--title{
+          grid-column: 2 / span 6;
+          grid-row: 6/ 6;
+          min-width: 100%;    
+          font-family: $quotationFont;
+          font-style: normal;
+          line-height: 1.5;
+          font-weight: normal;
+          font-size: 50px;
+          letter-spacing: 0.392px;
+        }
+  
+        &--svg{
+          grid-column: 2 / span 6;
+          grid-row: 7/ 7;
+          align-self: end;
+          svg{
+            float: right;
+          }
+        }
+  
+        &--signature{
+          grid-column: 2 / span 6;
+          grid-row: 8/ 8;
+          align-self: end;
+          p{
+            text-align: right;     
+            font-family: $signatureFont;
+            font-Size: 45px;
+            line-Height: 32px;
+            line-Height: 100%;
+          }
+        }
+    
+        &--image4{
+          grid-column: 2 / span 4;
+          grid-row: 10/ 10;
+          padding: none;
+          img{   
+            padding: 0px 30px 30px 0px;
+            object-position: 100% 60%;
+            width: 32vw;
+            height: 70vh;
+            object-fit: cover;
+          }
+        }
+    
+        &--paragraph{
+          grid-column: 6 / span 2;
+          grid-row: 10/ 10;
+  
+          p{
+            padding: 0px 30px 25px 0;
+            min-width: 80%;   
+            font-family: $paragraphFont;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 17px;
+            letter-spacing: 0.228667px;
+          }
+        }
+    
+        &--image5{
+          grid-column: 6 / span 2;
+          grid-row: 12/ 12;
+  
+          img{
+            padding: 0px 0px 0px 0px;
+            object-position: 0% 110%;
+            width: 32vw;
+            height: 70vh;
+            object-fit: cover;
+  
+          }
+        }
+        &--svg2{
+          grid-column: 2 / span 1;
+          grid-row: 16/ 16;
+          .onion{
+            float: left;
+          }
+        }    
+      }
+    }   
+  }
+  
+  
